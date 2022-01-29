@@ -1,0 +1,10 @@
+--------------------
+objectives:
+- how to use the PostgreSQL CLI to restore a full database from a backup.
+- using a combination of the CLI and pgAdmin, make some changes to this database and perform a full backup.
+- delete this database to practice a full restoration in the scenario of an accidental deletion with pgAdmin.
+
+---------------------------
+- for the fool restore in the Cloud IDE, enter the following command
+  to create a backup of the restored_demo called restored_demo_backup.sql database:
+pg_dump --username=postgres --host=localhost restored_demo > restored_demo_backup.sql
